@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>José Fernández Sánchez · Power BI</title>
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --ink: #1d1d1f;
+    --muted: #6b6b70;
+    --accent: #0f6cbd;
+    --line: #e4e4e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+  }
+  header, section { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    position: sticky; top: 0; background: var(--bg);
+    border-bottom: 1px solid var(--line); z-index: 10;
+  }
+  nav .inner {
+    max-width: 1040px; margin: 0 auto; padding: 14px 24px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  nav strong { font-size: 15px; }
+  nav a {
+    color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 18px;
+  }
+  nav a:hover { color: var(--accent); }
+
+  .hero { padding: 72px 24px 48px; }
+  .hero h1 { font-size: 44px; line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .hero .role { font-size: 20px; color: var(--accent); margin: 0 0 18px; }
+  .hero p.lead { max-width: 680px; font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge {
+    font-size: 13px; padding: 6px 12px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--line);
+  }
+  .cta { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 8px;
+    text-decoration: none; font-size: 15px; border: 1px solid var(--accent);
+    color: var(--accent); background: transparent;
+  }
+  .btn.primary { background: var(--accent); color: #fff; }
+
+  h2 {
+    font-size: 26px; letter-spacing: -0.01em;
+    margin: 56px 0 8px;
+  }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+
+  .grid {
+    display: grid; gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;
+  }
+  .thumb {
+    aspect-ratio: 16 / 9; background: #e9eef5;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 13px; border-bottom: 1px solid var(--line);
+  }
+  .card .body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .card h3 { margin: 0; font-size: 17px; }
+  .card .problem { font-size: 14px; color: var(--muted); margin: 0; }
+  .card .result { font-size: 14px; margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
+  .tag {
+    font-size: 12px; padding: 3px 9px; border-radius: 6px;
+    background: #eef3fa; color: #24517e;
+  }
+  .card a.link { font-size: 14px; color: var(--accent); text-decoration: none; margin-top: 4px; }
+
+  .list { list-style: none; padding: 0; margin: 0; }
+  .list li {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  .list strong { display: block; }
+  .list span { color: var(--muted); font-size: 14px; }
+
+  .two { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 720px) {
+    .hero h1 { font-size: 34px; }
+    .two { grid-template-columns: 1fr; }
+    nav a { margin-left: 12px; }
+  }
+
+  .note {
+    font-size: 13px; color: var(--muted); background: #fff8e1;
+    border: 1px dashed #e0b84a; border-radius: 8px; padding: 10px 14px; margin: 16px 0 0;
+  }
+  footer {
+    margin-top: 72px; padding: 32px 24px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px; text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <strong>José Fernández</strong>
+    <div>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div style="max-width:1040px;margin:0 auto;">
+    <h1>José Fernández Sánchez</h1>
+    <p class="role">Growth Data Lead · Desarrollador Power BI · Data Visualization Specialist</p>
+    <p class="lead">
+      Diseño reportes y tableros de gestión en Power BI para áreas que necesitan seguimiento confiable y oportuno, con modelos de datos en DAX y Power Query y automatización que reduce el trabajo manual. También creo experiencias interactivas con HTML, cuidando la UX y la UI para que cada dashboard sea claro e intuitivo. Además, comparto esta práctica como consultor y formador, enseñando a otros a modelar y visualizar datos para que los números se usen de verdad en las decisiones.
+    </p>
+    <div class="badges">
+      <span class="badge">Microsoft PL-300</span>
+      <span class="badge">Finalista Power BI Dataviz 2025</span>
+      <span class="badge">+5 años en BI</span>
+      <span class="badge">Power BI · Fabric · SQL · Python · Azure</span>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#proyectos">Ver proyectos</a>
+      <a class="btn" href="#contacto">Contactar</a>
+    </div>
+  </div>
+</div>
+
+<section id="sobre">
+  <h2>Sobre mí</h2>
+  <div class="sub">
+    <p>He trabajado en reporting de gestión, análisis de performance y crecimiento, y en consultoría para empresas dentro y fuera del Perú. Trabajo de cerca con las áreas de negocio: primero entiendo qué decisión necesitan tomar y después diseño el modelo de datos y el tablero que la respalda. Así, cada dashboard responde a una pregunta concreta en lugar de mostrar información sin dirección.</p>
+    <p>Me importa que los datos tengan impacto real, así que cuido tanto la lógica del modelo (DAX, Power Query, SQL) como la experiencia de quien lo usa: UX, UI y, cuando hace falta, interactividad con HTML. También enseño Power BI, porque explicar cómo se construye un buen reporte me ayuda a hacerlo mejor. A futuro busco [completa aquí: el tipo de rol o proyectos que quieres].</p>
+  </div>
+  <div class="two">
+    <div class="card" style="padding:20px;">
+      <strong>Qué hago</strong>
+      <p style="color:var(--muted);margin:8px 0 0;">Reporting ejecutivo y de gestión, análisis de performance y crecimiento, automatización de procesos con Power Automate y Power Apps, y formación en Power BI.</p>
+    </div>
+    <div class="card" style="padding:20px;">
+      <strong>Herramientas</strong>
+      <p style="color:var(--muted);margin:8px 0 0;">Power BI, DAX, Power Query, SQL, Python, Power Automate, Power Apps, Azure.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos destacados</h2>
+  <p class="sub">[Elige 5 o 6. Cada tarjeta: captura del dashboard, problema, resultado y stack.]</p>
+  <div class="grid">
+
+    <article class="card">
+      <div class="thumb">[Captura del CV sin DNI, teléfono ni fecha de nacimiento]</div>
+      <div class="body">
+        <h3>CV interactivo en Power BI · Versión 2022</h3>
+        <p class="problem">Presentar mi trayectoria profesional de forma visual e interactiva, en lugar de un CV estático en PDF.</p>
+        <p class="result"><strong>Resultado:</strong> Resume experiencia, formación, certificación y habilidades en un solo reporte navegable.</p>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">Visualización</span><span class="tag">UX</span></div>
+        <a class="link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYzNzk0ZjQtODI3Zi00YjAzLWFkMDctNmFlNTg4NTBiZDY2IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">Ver CV interactivo →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb">[Captura del dashboard Rolex vs Casio]</div>
+      <div class="body">
+        <h3>Comparativa de ventas Rolex vs Casio</h3>
+        <p class="problem">Comparar el desempeño de dos marcas de relojes en ventas y unidades vendidas, con filtros por año, región y marca.</p>
+        <p class="result"><strong>Resultado:</strong> Rolex concentra el 89,6 % de las ventas ($355 mill.) frente al 10,4 % de Casio ($41 mill.), con seguimiento por trimestre, vendedor, cliente y ubicación.</p>
+        <a class="link" href="https://app.powerbi.com/view?r=eyJrIjoiOWZhNTkxY2ItYzc1ZC00YmJmLWIxMjQtNzgwZjlhZDRiYzIxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">Ver dashboard →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb">[Captura del dashboard Merx]</div>
+      <div class="body">
+        <h3>Métricas por jerarquía de productos · Merx</h3>
+        <p class="problem">Revisar ventas, utilidad y margen por producto, navegando por niveles de jerarquía (producto, marca y etiqueta) con filtros por año y categoría.</p>
+        <p class="result"><strong>Resultado:</strong> Con $3,16 M en ventas y 22 % de margen total, el reporte permite ver qué productos generan volumen con poca utilidad, desde márgenes de 5 % hasta de 50 %.</p>
+        <a class="link" href="https://app.powerbi.com/view?r=eyJrIjoiNWEyNTZiYzUtM2ViZC00ZWEyLWE1Y2YtMDU3MzJkZTQ3NWE0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">Ver dashboard →</a>
+      </div>
+    </article>
+
+
+
+
+  </div>
+
+</section>
+
+<section id="experiencia">
+  <h2>Experiencia y reconocimientos</h2>
+  <ul class="list">
+    <li><strong>Especialista de Performance · OMD Perú</strong><span>10/2026 – Presente · Lima, Perú. Dashboards ejecutivos de KPIs de campañas y performance comercial, con análisis de funnel y revenue.</span></li>
+    <li><strong>Analista de Reporting y Gestión de Portafolio · Scotiabank</strong><span>04/2025 – 09/2026 · Lima, Perú. Modelos semánticos para más de 400 usuarios activos y KPIs estandarizados para 4 gerencias, con 40+ dashboards consolidados.</span></li>
+    <li><strong>Desarrollador Power BI (freelance) · Oz Digital AI</strong><span>01/2026 – 07/2026 · Miami, EE. UU. (remoto). Modelos semánticos y dashboards de leads, CPL y conversión con datos de Meta Ads y BigQuery.</span></li>
+    <li><strong>Instructor de Power BI · TBL The Bottom Line</strong><span>04/2026 – 06/2026 · Guayaquil, Ecuador (remoto). Programa de especialización en modelado de datos, DAX y ETL para gerentes y líderes de área.</span></li>
+    <li><strong>Desarrollador y Consultor Power BI (freelance)</strong><span>01/2023 – 12/2025 · Lima, Perú. Soluciones de Marketing Analytics end-to-end y análisis de desempeño deportivo.</span></li>
+    <li><strong>Analista de Inteligencia de Cobranza · Caja Metropolitana de Lima</strong><span>10/2024 – 03/2025 · Lima, Perú. Dashboards de mora y recupero; reducción de 15 % en el tiempo de asignación de cobranza con Power Apps y Power Automate.</span></li>
+    <li><strong>Finalista, Concurso de Visualización en Power BI 2025</strong><span>Microsoft</span></li>
+    <li><strong>Microsoft Certified: Power BI Data Analyst (PL-300)</strong><span>Certificación</span></li>
+  </ul>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p class="sub">Si buscas a alguien para liderar reporting y visualización de datos, o si tienes un problema de datos que los reportes actuales no resuelven, hablemos. Trabajo de cerca con las áreas de negocio para entender qué decisión hay que tomar antes de diseñar el modelo y el tablero, y me interesa que cada solución se use de verdad. Me encanta conversar sobre datos y decisiones, así que escríbeme y exploramos juntos qué podemos construir.</p>
+  <div class="cta" style="margin-top:0;">
+    <a class="btn primary" href="mailto:josefernandez.data@gmail.com">josefernandez.data@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/jose-fernandez-sanchez">LinkedIn</a>
+    <a class="btn" href="#">GitHub</a>
+  </div>
+  <p class="note">Nota para ti: reemplaza los textos entre corchetes. Si un dashboard tiene datos confidenciales, usa capturas con datos ficticios.</p>
+</section>
+
+<footer>© 2026 José Fernández Sánchez · Lima, Perú</footer>
+
+</body>
+</html>
