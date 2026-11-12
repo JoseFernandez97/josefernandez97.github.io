@@ -78,7 +78,8 @@
     color: var(--accent); margin: 0 0 8px; font-weight: 600;
   }
   h2 { font-size: 28px; letter-spacing: -0.01em; margin: 0 0 8px; }
-  .sub { color: var(--muted); margin: 0 0 28px; max-width: 680px; }
+  .sub { color: var(--muted); margin: 0 0 28px; max-width: none; white-space: nowrap; }
+  @media (max-width: 720px) { .sub { white-space: normal; } }
 
   /* Tarjetas numeradas */
   .principles {
@@ -131,7 +132,7 @@
   .list span { color: var(--muted); font-size: 14px; }
 
   /* Contacto */
-  .contact-q { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 14px; max-width: 720px; }
+  .contact-q { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 14px; max-width: none; white-space: nowrap; }
 
   footer {
     margin-top: 72px; padding: 32px 24px; border-top: 1px solid var(--line);
@@ -140,7 +141,7 @@
 
   @media (max-width: 720px) {
     .hero .slogan { font-size: 32px; }
-    .contact-q { font-size: 26px; }
+    .contact-q { font-size: 26px; white-space: normal; }
     header nav a { margin-left: 12px; }
   }
 </style>
@@ -205,20 +206,20 @@
 
   <section>
     <p class="label">Habilidades</p>
-    <h2>Lo que aporto en un proyecto</h2>
-    <p class="sub">Herramientas y capacidades agrupadas por lo que resuelven.</p>
+    <h2>Habilidades técnicas y de gestión</h2>
+    <p class="sub">Herramientas y capacidades que aplico en cada proyecto.</p>
     <div class="principles">
       <div class="principle">
         <h3>Visualización y BI</h3>
-        <p>Power BI, Looker Studio (Data Studio) y Tableau.</p>
+        <p>Power BI, Looker Studio y Tableau para dashboards ejecutivos e interactivos.</p>
       </div>
       <div class="principle">
         <h3>Programación y análisis</h3>
-        <p>Python y R para análisis estadístico, limpieza y automatización de datos.</p>
+        <p>Python y R para análisis estadístico, limpieza de datos y visualizaciones reproducibles.</p>
       </div>
       <div class="principle">
         <h3>Datos y nube</h3>
-        <p>SQL, Azure y Google Cloud Platform (GCP), con BigQuery para modelos y reportes.</p>
+        <p>SQL, Azure y GCP, con BigQuery para modelos de datos y reportes en producción.</p>
       </div>
       <div class="principle">
         <h3>Gestión de proyectos</h3>
@@ -349,7 +350,7 @@
   <section id="contacto">
     <p class="label">Contacto</p>
     <p class="contact-q">¿Tu equipo necesita datos que se usen de verdad?</p>
-    <p class="sub">Si buscas a alguien para liderar reporting y visualización de datos, o tienes un problema que los reportes actuales no resuelven, escríbeme. Exploramos juntos qué podemos construir.</p>
+    <p class="sub">Si buscas liderar reporting y visualización de datos, o tienes un problema que tus reportes no resuelven, escríbeme.</p>
     <div class="cta">
       <a class="btn primary" href="mailto:josefernandez.data@gmail.com">josefernandez.data@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/jose-fernandez-sanchez">LinkedIn</a>
