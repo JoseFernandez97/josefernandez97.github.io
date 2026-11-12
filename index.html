@@ -6,12 +6,12 @@
 <title>José Fernández Sánchez · Power BI</title>
 <style>
   :root {
-    --bg: #f7f7f5;
+    --bg: #f6f4ee;
     --card: #ffffff;
-    --ink: #1d1d1f;
-    --muted: #6b6b70;
-    --accent: #0f6cbd;
-    --line: #e4e4e0;
+    --ink: #1d2b2b;
+    --muted: #5f6b6b;
+    --accent: #0f5c5c;
+    --line: #e2dfd5;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -56,7 +56,7 @@
     color: var(--accent); background: transparent;
   }
   .btn.primary { background: var(--accent); color: #fff; }
-  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; justify-content: center; }
   .badge {
     font-size: 13px; padding: 5px 12px; border-radius: 999px;
     background: var(--card); border: 1px solid var(--line);
@@ -108,7 +108,7 @@
   .card .problem { font-size: 14px; color: var(--muted); margin: 0; }
   .card .result { font-size: 14px; margin: 0; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
-  .tag { font-size: 12px; padding: 3px 9px; border-radius: 6px; background: #eef3fa; color: #24517e; }
+  .tag { font-size: 12px; padding: 3px 9px; border-radius: 6px; background: #e3efee; color: #0f5c5c; }
   .card a.link { font-size: 14px; color: var(--accent); text-decoration: none; margin-top: 4px; }
 
   /* Listas */
@@ -189,6 +189,30 @@
         <span class="num">[03]</span>
         <h3>Uso real</h3>
         <p>UX y UI cuidadas, y automatización para reducir el trabajo manual y el tiempo de reporte.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Habilidades</p>
+    <h2>Lo que aporto en un proyecto</h2>
+    <p class="sub">Herramientas y capacidades agrupadas por lo que resuelven.</p>
+    <div class="principles">
+      <div class="principle">
+        <h3>Visualización y BI</h3>
+        <p>Power BI, Looker Studio (Data Studio) y Tableau.</p>
+      </div>
+      <div class="principle">
+        <h3>Programación y análisis</h3>
+        <p>Python y R para análisis estadístico, limpieza y automatización de datos.</p>
+      </div>
+      <div class="principle">
+        <h3>Datos y nube</h3>
+        <p>SQL, Azure y Google Cloud Platform (GCP), con BigQuery para modelos y reportes.</p>
+      </div>
+      <div class="principle">
+        <h3>Gestión de proyectos</h3>
+        <p>Coordinación de requerimientos, plazos y entregables con equipos internos e internacionales, con metodologías ágiles (Scrum).</p>
       </div>
     </div>
   </section>
@@ -295,7 +319,21 @@
   <section id="deportes">
     <p class="label">Analítica deportiva</p>
     <h2>Próximamente</h2>
-    <p class="sub">Análisis de tracking y eventos de fútbol, con visualizaciones en Power BI.</p>
+    <p class="sub">Proyectos de analítica de fútbol en preparación:</p>
+    <div class="principles">
+      <div class="principle">
+        <h3>Visualizaciones en R y Python</h3>
+        <p>Gráficos y mapas de tiro, pases y presión a partir de datos de eventos y tracking.</p>
+      </div>
+      <div class="principle">
+        <h3>Video análisis</h3>
+        <p>Análisis táctico y de jugadas con herramientas como Longomatch y Nacsport.</p>
+      </div>
+      <div class="principle">
+        <h3>Scouting</h3>
+        <p>Evaluación y comparación de jugadores con métricas por 90 minutos y percentiles.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contacto">
